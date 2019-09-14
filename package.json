@@ -1,0 +1,63 @@
+{
+  "name": "rytass-landing",
+  "version": "0.1.0",
+  "description": "Rytass Landing Page",
+  "main": "entry.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --host 0.0.0.0 --config ./client/webpack.config.js",
+    "build": "NODE_ENV=production webpack --optimize-dedupe -p --config ./client/webpack.config.js",
+    "docker": "docker build -f ./client/Dockerfile -t asia.gcr.io/develop-server/rytass-landing ./client",
+    "docker-upload": "docker push asia.gcr.io/develop-server/rytass-landing",
+    "release": "npm run build && npm run docker && npm run docker-upload",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rytass/Landing.git"
+  },
+  "keywords": [
+    "Rytass",
+    "Landing"
+  ],
+  "author": "Chia Yu Pai (Rytass)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rytass/Landing/issues"
+  },
+  "homepage": "https://github.com/Rytass/Landing#readme",
+  "dependencies": {
+    "@emotion/core": "^10.0.17",
+    "debug": "^4.1.1",
+    "moment": "^2.24.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@hot-loader/react-dom": "^16.9.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-emotion": "^10.0.17",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-flowtype": "^4.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "file-loader": "^4.2.0",
+    "flow-bin": "^0.107.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react-hot-loader": "^4.12.13",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
