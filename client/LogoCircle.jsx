@@ -7,14 +7,13 @@ const styles = {
   placement: {
     width: '100%',
     height: 0,
-    padding: `0 0 85.355% 0`,
+    padding: '0 0 85.355% 0',
     position: 'relative',
     overflow: 'hidden',
   },
   container: {
     width: '100%',
     height: 0,
-    // padding: `0 0 ${(Math.sqrt(2) - 0.5) * 100}% 0`,
     padding: '0 0 100% 0',
     position: 'absolute',
     top: 0,
@@ -37,14 +36,13 @@ const styles = {
 function LogoCircle({
   color,
 }: {
-  color: string,
+  color?: string,
 }) {
   return (
     <div css={styles.placement}>
       <div css={styles.container}>
         <div css={styles.circleWrapper}>
-          <div css={[styles.circle, { backgroundColor: color }]}>
-          </div>
+          <div css={[styles.circle, { backgroundColor: color }]} />
         </div>
       </div>
     </div>

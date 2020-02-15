@@ -104,7 +104,7 @@ const styles = {
   },
 };
 
-const targetTime = moment('2020-01-01').startOf('year');
+const targetTime = moment('2021-01-01').startOf('year');
 
 function App() {
   const [nowTime, setTime] = useState(moment());
@@ -294,6 +294,7 @@ function App() {
       <footer css={styles.footer}>
         <a
           target="_blank"
+          rel="noopener noreferrer"
           css={styles.link}
           href="//facebook.com/rytasscorp">
           Facebook
@@ -301,6 +302,7 @@ function App() {
         .
         <a
           target="_blank"
+          rel="noopener noreferrer"
           css={styles.link}
           href="//instagram.com/rytasscorp">
           Instagram
