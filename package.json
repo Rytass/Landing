@@ -5,7 +5,7 @@
   "main": "entry.js",
   "scripts": {
     "start": "webpack serve --hot --host 0.0.0.0 --config ./client/webpack.config.js",
-    "build": "NODE_ENV=production webpack --optimize-dedupe -p --config ./client/webpack.config.js",
+    "build": "NODE_ENV=production webpack --config ./client/webpack.config.js",
     "docker": "docker build -f ./client/Dockerfile -t asia.gcr.io/develop-server/rytass-landing ./client",
     "docker-upload": "docker push asia.gcr.io/develop-server/rytass-landing",
     "release": "npm run build && npm run docker && npm run docker-upload",
