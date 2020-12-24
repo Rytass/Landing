@@ -1,7 +1,7 @@
 // @flow
 /** @jsx jsx */
 
-import { jsx, css } from '@emotion/core';
+import { jsx, css } from '@emotion/react';
 import moment from 'moment';
 import {
   Fragment,
@@ -194,21 +194,23 @@ function App() {
         <span> </span>
         <span css={styles.outline}>has</span>
         <span> </span>
-        <span css={styles.outline}>skilled</span>
+        <span css={styles.outline}>skillful</span>
+        <span> </span>
+        <span css={styles.outline}>staff</span>
         <span> </span>
         <span css={styles.outline}>members</span>
         <span> </span>
         <span css={styles.outline}>from</span>
         <span> </span>
-        <span css={styles.filled}>separated</span>
+        <span css={styles.filled}>diverse</span>
         <span> </span>
-        <span css={styles.filled}>domains,</span>
+        <span css={styles.filled}>domains.</span>
         <span> </span>
-        <span css={styles.outline}>we</span>
+        <span css={styles.outline}>We</span>
         <span> </span>
         <span css={styles.outline}>have</span>
         <span> </span>
-        <span css={styles.outline}>the</span>
+        <span css={styles.outline}>an</span>
         <span> </span>
         <span css={styles.filled}>open</span>
         <span> </span>
@@ -218,17 +220,41 @@ function App() {
         <span> </span>
         <span css={styles.outline}>collaboration,</span>
         <span> </span>
-        <span css={styles.outline}>uniting</span>
+        <span css={styles.outline}>which</span>
         <span> </span>
-        <span css={styles.outline}>diverse</span>
+        <span css={styles.outline}>allows</span>
+        <span> </span>
+        <span css={styles.outline}>us</span>
+        <span> </span>
+        <span css={styles.outline}>to</span>
+        <span> </span>
+        <span css={styles.outline}>unite</span>
+        <span> </span>
+        <span css={styles.outline}>a</span>
+        <span> </span>
+        <span css={styles.outline}>wide</span>
+        <span> </span>
+        <span css={styles.outline}>variety</span>
+        <span> </span>
+        <span css={styles.outline}>of</span>
         <span> </span>
         <span css={styles.outline}>fields.</span>
         <span> </span>
-        <span css={styles.filled}>Lateral</span>
+        <span css={styles.outline}>Our</span>
+        <span> </span>
+        <span css={styles.outline}>utilization</span>
+        <span> </span>
+        <span css={styles.outline}>of</span>
+        <span> </span>
+        <span css={styles.filled}>lateral</span>
         <span> </span>
         <span css={styles.filled}>thinking</span>
         <span> </span>
-        <span css={styles.outline}>can</span>
+        <span css={styles.outline}>allows</span>
+        <span> </span>
+        <span css={styles.outline}>us</span>
+        <span> </span>
+        <span css={styles.outline}>to</span>
         <span> </span>
         <span css={styles.outline}>view</span>
         <span> </span>
@@ -238,12 +264,6 @@ function App() {
         <span> </span>
         <span css={styles.filled}>picture,</span>
         <span> </span>
-        <span css={styles.outline}>make</span>
-        <span> </span>
-        <span css={styles.outline}>us</span>
-        <span> </span>
-        <span css={styles.outline}>to</span>
-        <span> </span>
         <span css={styles.outline}>create</span>
         <span> </span>
         <span css={styles.outline}>better</span>
@@ -252,13 +272,19 @@ function App() {
         <span> </span>
         <span css={styles.outline}>and</span>
         <span> </span>
-        <span css={styles.outline}>more,</span>
+        <span css={styles.outline}>ultimately</span>
         <span> </span>
-        <span css={styles.filled}>to</span>
+        <span css={styles.outline}>push</span>
+        <span> </span>
+        <span css={styles.outline}>us</span>
+        <span> </span>
+        <span css={styles.outline}>forward</span>
+        <span> </span>
+        <span css={styles.outline}>to</span>
         <span> </span>
         <span css={styles.filled}>discover</span>
         <span> </span>
-        <span css={styles.filled}>the</span>
+        <span css={styles.filled}>new</span>
         <span> </span>
         <span css={styles.filled}>frontiers.</span>
         <span> </span>

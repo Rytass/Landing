@@ -8,7 +8,7 @@
   ],
   "plugins": [
     "react-hot-loader/babel",
-    "emotion",
+    "@emotion",
     "@babel/transform-runtime"
   ],
 }

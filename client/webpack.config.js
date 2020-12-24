@@ -4,6 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
@@ -14,11 +15,14 @@ module.exports = {
     path.resolve(__dirname, 'entry.jsx'),
   ],
   output: {
-    filename: '[name].[hash].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
   },
   optimization: {
+    moduleIds: NODE_ENV !== 'production' ? 'named' : 'deterministic',
+    minimize: NODE_ENV === 'production',
+    minimizer: [new TerserPlugin()],
     splitChunks: {
       cacheGroups: {
         vendor: {
@@ -42,7 +46,6 @@ module.exports = {
     new HTMLWebpackPlugin({
       template: path.resolve(__dirname, 'static/index.html'),
     }),
-    new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
   ],
   mode: NODE_ENV === 'production' ? 'production' : 'development',
@@ -62,8 +65,8 @@ module.exports = {
   resolve: {
     mainFields: [
       'browser',
-      'main',
       'module',
+      'main',
     ],
     extensions: [
       '.jsx',
