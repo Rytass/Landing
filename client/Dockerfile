@@ -14,7 +14,9 @@ ADD nginx.conf /etc/nginx/nginx.conf
 RUN chmod 644 /etc/nginx/nginx.conf
 ADD dist/* /var/www/Rytass/
 RUN mkdir -p /var/www/Rytass/fonts
+RUN mkdir -p /var/www/Rytass/videos
 ADD static/fonts/* /var/www/Rytass/fonts/
+ADD static/videos/* /var/www/Rytass/videos/
 
 WORKDIR /var/www/Rytass
 
