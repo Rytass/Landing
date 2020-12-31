@@ -94,6 +94,15 @@ module.exports = {
         },
       }],
       include: /fonts/,
+    }, {
+      test: /\.(mp4|mkv)$/i,
+      use: [{
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        },
+      }],
+      include: /videos/,
     }],
   },
 };
