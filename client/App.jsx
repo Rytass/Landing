@@ -24,8 +24,6 @@ function App() {
     };
   }, [isVideoMode]);
 
-  return <AppVideo />;
-
   if (isVideoMode) return <AppVideo />;
 
   return <AppCountDown />;
