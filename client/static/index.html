@@ -21,7 +21,7 @@
 
       * {
         box-sizing: border-box;
-        font-family: Faktum, sans-serif;
+        font-family: Faktum, sans-serif !important;
       }
 
       html, body {
@@ -40,6 +40,8 @@
         min-height: 100%;
         position: relative;
       }
+
+      :root{--main:#3b5fc4}@keyframes site-loading-entry-1{from{transform:translate(1px,168px);opacity:1}to{transform:translate(1px,67px);opacity:1}}@keyframes site-loading-entry-2{from{transform:translate(58px,168px);opacity:1}to{transform:translate(58px,67px);opacity:1}}@keyframes site-loading-entry-3{from{transform:translate(107px,168px);opacity:1}to{transform:translate(107px,67px);opacity:1}}@keyframes site-loading-entry-4{from{transform:translate(145px,168px);opacity:1}to{transform:translate(145px,67px);opacity:1}}@keyframes site-loading-entry-5{from{transform:translate(199px,168px);opacity:1}to{transform:translate(199px,67px);opacity:1}}@keyframes site-loading-entry-6{from{transform:translate(242px,168px);opacity:1}to{transform:translate(242px,67px);opacity:1}}@keyframes entry-animation-circle{from{width:0;height:0;left:50%;top:100%}to{width:200vw;height:200vw;left:-50vw;top:-50vw}}#site-loading{width:100%;height:100%;z-index:999999999;position:fixed;top:0;left:0;background-color:#fff;display:flex;align-items:center;justify-content:center}#site-loading .display-wrapper{position:relative;width:290px;height:84px}#site-loading .background{position:absolute;width:290px;height:84px;top:0;left:0;display:block;clip-path:url(#clip-path);background-color:transparent;transition:background-image .2s ease-out}#site-loading .text-outline text{font-family:Faktum,"PingFang TC","Noto Sans TC","Open Sans","微軟正黑體",sans-serif;font-weight:700;font-size:84px;stroke-miterlimit:10;animation-duration:.75s;animation-iteration-count:1;animation-timing-function:ease-out;animation-fill-mode:forwards;opacity:0;fill:transparent;stroke:var(--main)}#site-loading .text-outline text:nth-child(1){animation-name:site-loading-entry-1;animation-delay:0s}#site-loading .text-outline text:nth-child(2){animation-name:site-loading-entry-2;animation-delay:.1s;animation-duration:.68s}#site-loading .text-outline text:nth-child(3){animation-name:site-loading-entry-3;animation-delay:.18s;animation-duration:.64s}#site-loading .text-outline text:nth-child(4){animation-name:site-loading-entry-4;animation-delay:.25s;animation-duration:.58s}#site-loading .text-outline text:nth-child(5){animation-name:site-loading-entry-5;animation-delay:.32s;animation-duration:.54s}#site-loading .text-outline text:nth-child(6){animation-name:site-loading-entry-6;animation-delay:.39s;animation-duration:.5s}#site-loading .enter-background{background-color:var(--main);width:0;height:0;border-radius:50%;position:fixed;left:50%;top:100%;animation-duration:1.25s;animation-delay:.24s;animation-iteration-count:1;animation-timing-function:ease-out;animation-fill-mode:forwards}
     </style>
   </head>
   <body>
